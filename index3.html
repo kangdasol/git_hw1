@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>설문조사</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+</head>
+<body>
+<div id="wrap">
+		<div id="header">
+			<div id="header_top">
+				<div id="header_left">
+					<img src="image/image2.jpg" width="175" height="150" alt="image2">
+				</div>
+			</div>
+		</div>
+		<div id="navbar">
+			<ul>
+				<li><a href="http://127.0.0.1/HW1-60132224/index.html">HOME</a></li>
+				<li><a href="http://127.0.0.1/HW1-60132224/index2.html">Schedule</a></li>
+				<li><a class="selected">Survey</a></li>
+			</ul>
+		</div>
+		<div id="line"></div>
+
+		<div id="content">
+			<div id="main_content">
+				<div class="section_3" id="special_review">
+				<form action="updata.php" method="post">
+				<h1>강다솔에 대한 설문조사</h1>
+				<ul>
+				<li><input type="hidden" name="type" value="user"/>
+				본인 이름 : <input type="text" name="name" size="10"/>
+				</li>
+				<li>
+				본인 성별 : 
+				<input type="radio" name="sex" value="m"/>남
+				<input type="radio" name="sex" value="f"/>여
+				</li>
+				<li>
+				본인이 생각하는 강다솔의 성격은?<br/>
+				<input type="checkbox" name="style" value="active"/>활발할다.<br/>
+				<input type="checkbox" name="style" value="cute"/>애교가 많다.<br/>
+				<input type="checkbox" name="style" value="calm"/>차분하다.<br/>
+				</li>
+				<li>
+				강다솔에게 바라는 점은?<br/>
+				<input type="radio" name="hope" value="no"/>이대로도 좋다.<br/>
+				<input type="radio" name="hope" value="expression"/>자신에 대한 표현을 더 많이 했으면 좋겠다.<br/>
+				<input type="radio" name="hope" value="quite"/>조금만 조용히 했으면 좋겠다.<br/>
+				</li>
+				<li>
+				기타 의견을 적어주세요.<br/>
+				<textarea cols="30" rows="10" name="option"></textarea>
+				</li>
+				</ul>
+				<br/>
+				<input type="button" onclick="location.href='http://127.0.0.1/HW1-60132224/index.html'" value="go to start" />
+				</form>
+			</div> <!--end main content-->
+			<div id="footer">
+				<p>사이트 소개 | 이용약관 | 개인정보취급방침 | 책임의 한계와 법적 고지 | 고객센터</p>
+				<p>Copyright © MJUCafe. All rights reserved.</p>
+			</div> <!-- end footer-->
+		</div> <!-- end content -->
+
+	</div> <!--end warp-->
+</div>
+</body>
+</html>
